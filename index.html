@@ -225,7 +225,7 @@
     }
 
     function buttonClicked() {
-        if (!isSmasherInstalled) return void showExtension();
+        //if (!isSmasherInstalled) return void showExtension();
         gameID = $("#GamePin").val();
         var e = !0;
         if ("" == gameID) return void(e = !1);
@@ -243,7 +243,7 @@
     else {
         var verficationCode = "",
             buildNumber = -1,
-            isSmasherInstalled = !1,
+            //isSmasherInstalled = !1,
             numberOfKahoots = 50,
             hasWarnedOfMax = !1,
             hasWarnedRecommended = !1,
