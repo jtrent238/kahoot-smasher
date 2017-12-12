@@ -10,7 +10,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 else
 {
 var buildNumber =0;
-var isSmasherInstalled = true;
+var isSmasherInstalled = false;
 var loadInline = true;
 var numberOfKahoots =20;
 var showCSS=false;
@@ -93,7 +93,7 @@ function updateName()
 {
     $("#nameExample").html("Example: " + generateName(namingMethod));
 }
-
+    /*
 function showExtension()
 {
     $("#install").css("display", "block");
@@ -102,7 +102,7 @@ function hideExtension()
 {
     $("#install").css("display", "none");
 }
-
+    */
 function addMoreKahoots()
 {
     document.body.removeChild(addMoreButton);
@@ -187,11 +187,13 @@ function loadCssToggle()
 
 function buttonClicked()
 {
+        /*
     if(!isSmasherInstalled)
     {
         showExtension();
         return;
     }
+        */
     gameID = $("#GamePin").val();
     var canContinue = true;
     if(gameID=="")
